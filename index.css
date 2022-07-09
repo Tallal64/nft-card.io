@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: outfit;
+    height: 100vh;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    padding: 23px;
+    width: 375px;
+    border-radius: 12px;
+}
+
+
+.image-container img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 23px;
+    margin-top: 1.2rem;
+}
+
+.subtitle {
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5;
+    margin-top: 1.2rem;
+    word-spacing: 1.5px;
+    font-size: 18px;
+}
+
+.days-eth {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 1.5rem;
+}
+
+.days {
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.footer img {
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    color: hsl(215, 51%, 70%);
+}
+
+.footer span {
+    color: white;
+}
+
+.title:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.footer span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container div {
+    background-image: url(/images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 255, 247, 0.50);
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.image-container div:hover {
+    cursor: pointer;
+    opacity: 1;
+}
